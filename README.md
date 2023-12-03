@@ -1,2 +1,3 @@
 # TOP-templates
-Building reusable templages
+Building reusable templates
+
