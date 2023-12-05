@@ -1,0 +1,82 @@
+/* Nav mouseover */
+.nav ul {
+    list-style: none;
+    background-color: blue;
+    text-align: center;
+    padding: .5rem;
+}
+.nav ul li {
+    display: inline;
+    margin: 1rem;
+    font-size: 1rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    font-weight:bolder;
+}
+
+/* Button dropdown */
+.dropDown button {
+    border-radius: 5px;
+    width: 9rem;
+}
+.dropDown ul {
+   list-style: none;
+   border: 2px black solid;
+   border-radius: 5px;
+   width: 9rem;
+}
+.dropDown ul li {
+    margin-left: -2em;
+}
+.dropDown ul li:hover {
+    background-color: gray;
+    margin-left: -2em;
+    border-radius: 5px;
+}
+.dropDown li, 
+.dropDown button {
+    padding: .25rem;
+    margin: .25rem;
+    width: 10rem;
+};
+
+/* Mobile Dot Nav */
+.dotNav ul {
+    list-style-type: none;
+
+}
+.dotNav ul li {
+    display: flex;
+    list-style: none;
+    gap: 1em;
+    margin: .5em;
+}
+.dotNav ul li span {
+    line-height: 1.5rem;
+    font-size: 1.5rem;
+}
+.dotNav ul li div {
+    background-color: blue;
+    color: white;
+    text-align: center;
+    border-radius: 50%;
+    height: 1.5em;
+    width: 1.5em;
+    line-height: 1.5rem;
+    font-size:1.5em;
+}
+.dotNav ul li div:hover {
+    background-color: orange;
+    width: 1em;
+    height: 1em;
+}
+.dotNav button {
+    border-radius: 50%;
+    background-color: blue;
+    border: none;
+    color: white;
+    font-weight: bolder;
+    font-size: 1.5em;
+    padding: .5em;
+
+}
