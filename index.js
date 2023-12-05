@@ -38,10 +38,10 @@ const dropDowns = (()=> {
 );
 })();
 
-//Mobile nav and rudder
-function rudder () {
-  const rudder = Array.from(document.getElementsByClassName('dotNav'));
-  rudder.forEach(menu => {
+//Mobile dot nav
+function dotNav () {
+  const dot = Array.from(document.getElementsByClassName('dotNav'));
+  dot.forEach(menu => {
     let list = menu.querySelector('ul');
       list.style.display = 'none';
     menu.addEventListener('click',()=> {
@@ -53,4 +53,4 @@ function rudder () {
    }
  )
   })}
-rudder();
+dotNav();

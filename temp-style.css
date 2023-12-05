@@ -13,6 +13,9 @@
     color: white;
     font-weight:bolder;
 }
+.nav ul li:hover {
+    color: gold;
+}
 
 /* Button dropdown */
 .dropDown button {
@@ -67,8 +70,9 @@
 }
 .dotNav ul li div:hover {
     background-color: orange;
-    width: 1em;
-    height: 1em;
+}
+.dotNav ul li:hover {
+    font-weight: bolder;
 }
 .dotNav button {
     border-radius: 50%;
