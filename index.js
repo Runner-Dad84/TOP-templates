@@ -38,7 +38,7 @@ const dropDowns = (()=> {
 );
 })();
 
-//Mobile dot nav
+// Mobile dot nav
 function dotNav () {
   const dot = Array.from(document.getElementsByClassName('dotNav'));
   dot.forEach(menu => {
@@ -54,3 +54,28 @@ function dotNav () {
  )
   })}
 dotNav();
+
+// Image carousel
+function forward () {
+  const slide1 = document.getElementById('slide1');
+  const slide2 = document.getElementById('slide2');
+  const slide3 = document.getElementById('slide3');
+  const slide4 = document.getElementById('slide4');
+  const slide5 = document.getElementById('slide5');
+  const containter = document.getElementById('container');
+
+
+};
+const carousel = (()=> {
+  
+  const slide1 = document.getElementById('pic1');
+  const slide2 = document.getElementById('pic2');
+  const slide3 = document.getElementById('pic3');
+  const slide4 = document.getElementById('pic4');
+  const slide5 = document.getElementById('pic5');
+
+
+
+  
+
+})();

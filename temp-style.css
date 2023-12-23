@@ -84,3 +84,120 @@
     padding: .5em;
 
 }
+
+/* Image Carosel - Html & CSS only*/
+:root {
+    --carousel-ht: 45vh;
+    --carousel-wt: 35vw;
+    --border-radius: 1em;
+    --container-ht: calc(0.95 * var(--carousel-ht));
+    --container-wt: calc(0.90 * var(--carousel-wt));
+    --slide-wt: calc(0.90 * var(--carousel-wt));
+}
+#outerWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: var(--carousel-ht);
+    width: var(--carousel-wt);
+    border-radius: var(--border-radius);
+    margin: 3rem;
+    padding: 1rem;
+    background: lightgray;
+}
+#container {
+    display: flex;
+    scroll-snap-type: x mandatory;
+    scroll-behavior:auto;
+    overflow: hidden;
+    height: var(--container-ht);
+    width: var(--container-wt);
+    border-radius: var(--border-radius);
+    background-color: white;
+}
+#container > div {
+    display: flex;
+}
+#container > div > div {
+    scroll-snap-align: start;
+    position: relative;
+    padding-top: 0.5em;
+    flex-shrink: 0;
+    height: var(--carousel-ht);
+    width: var(--slide-wt);
+}
+#tabs {
+    display: flex;
+    align-items: center;
+    flex-basis: 100%;
+    flex-shrink: 5;
+    background-color:lightgray;
+    
+    gap: 1.5rem;
+}
+#tabs > a {
+    text-decoration: none;
+}
+div > .slides {
+    position: relative;
+    animation-name: scroll;
+    animation-duration: 20s;
+    animation-timing-function:step-start;
+    animation-iteration-count: infinite;
+}
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    20% {
+        transform: translateX(-31.5vw);
+    }
+    40% {
+        transform: translateX(-63.0vw);
+    }
+    60% {
+        transform: translateX(-94.5vw);
+    }
+    80% {
+        transform: translateX(-126.0vw);
+    }
+    99% {
+        transform: translateX(-157.5vw);
+    }
+    100% {
+        transform: translateX(159.0vw);
+    }
+}
+.slides > a.back {
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    left: 0%;
+}
+.slides > a.forward {
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    right: 0%;
+}
+#tabs > a div.dot,
+.slides > a.back,
+.slides > a.forward
+ {
+   background-color: lightblue;
+   border: .15em solid black;
+   width: 1em;
+   height: 1rem;
+   border-radius: 50%;
+}
+#tabs > a div.dot:hover, 
+#tabs > a div.dot:active, 
+.slides > a.back,
+.slides > a.forward   {
+    background-color: rgb(224, 146, 224);
+    height: 1.2rem;
+    width: 1.2rem;
+}
+
+
